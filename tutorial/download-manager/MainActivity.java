@@ -12,26 +12,26 @@
 		
 		imageView = (ImageView)findViewById(R.id.imageView);
 		
-		//получаем ссылку на DownloadManager сервис
+		//Получаем ссылку на DownloadManager сервис
 		downloadManager = (DownloadManager) getSystemService(DOWNLOAD_SERVICE);
         
-		//создаем новый запрос
+		//Создаем новый запрос
 		Request request = new Request(Uri.parse(IMAGE_URL));
         request.setTitle("Title"); //заголовок будущей нотификации
         request.setDescription("My description"); //описание будущей нотификации
         request.setMimeType("application/my-mime"); //mine type загружаемого файла
         
-        //установите следующий флаг, если хотите,
+        //Установите следующий флаг, если хотите,
         //что-бы уведомление осталось по окончании загрузки
         request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
-        //добавляем запрос в очередь
+        //Добавляем запрос в очередь
         downloadManager.enqueue(request);
 	}
 	
 	@Override
 	protected void onResume() {
 		super.onResume();
-		//подписываемся на сообщения от сервиса
+		//Подписываемся на сообщения от сервиса
 		registerReceiver(receiver, new IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE));
 		registerReceiver(receiver, new IntentFilter(DownloadManager.ACTION_NOTIFICATION_CLICKED));
 	};
@@ -39,7 +39,7 @@
 	@Override
 	protected void onPause() {
 		super.onPause();
-		//отписываемся от сообщений сервиса
+		//Отписываемся от сообщений сервиса
 		unregisterReceiver(receiver);
 	};
 	
@@ -77,8 +77,10 @@
 	            int idIndex = cursor.getColumnIndex(DownloadManager.COLUMN_ID);
 	            if (cursor.moveToFirst()){
 	            	do {
+	            		//здесь вы можете получить id загрузки и
+	            		//реализовать свое поведение
 	            		long downloadId = cursor.getLong(idIndex);
-	            		//здесь вы можете реализовать свое поведение
+	            		
 	            	} while (cursor.moveToNext());
 	            }
 			}

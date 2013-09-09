@@ -2,7 +2,7 @@ public class BackgroundService extends Service {
     
     public static final String CHANNEL = BackgroundService.class.getSimpleName()+".broadcast";
     
-    //этот метод будет вызван всякий раз,
+    //Этот метод будет вызван всякий раз,
     //когда сервису будет передан новый Intent
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
@@ -12,7 +12,7 @@ public class BackgroundService extends Service {
         return Service.START_NOT_STICKY;
     }
 
-    //после завершения работы информируйте об этом,
+    //После завершения работы информируйте об этом,
     //разослав Broadcast
     private void sendResult() {
         Intent intent = new Intent(CHANNEL);

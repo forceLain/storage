@@ -22,7 +22,7 @@
     
     @Override
     protected void onStop() {
-        //Завершить загрузку картинки сразу
+        //Завершить загрузку картинки сразу,
         //как закроется Activity
         downloadTask.cancel(true);
         super.onStop();
@@ -98,7 +98,7 @@
             progressDialog.setProgress(progress[0]);
         }
         
-        //скроем диалог и покажем картинку
+        //Скроем диалог и покажем картинку
         @Override
         protected void onPostExecute(Drawable result) {
             imageView.setImageDrawable(result);
