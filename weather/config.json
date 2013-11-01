@@ -1,6 +1,6 @@
 {
     "background-url": "https://raw.github.com/forceLain/storage/master/weather/weather_bg.png",
-    "left-opacity":"1",
-	"center-opacity":"0.66",
-	"right-opacity":"0.33"
+    "left-alpha":"1",
+	"center-alpha":"0.66",
+	"right-alpha":"0.33"
 }
