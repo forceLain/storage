@@ -45,6 +45,46 @@
             "mime":"text/plain"
         },
         {
+            "type": "olympics",
+            "link": "Full Medal Count",
+            "linkURL": "https://www.washingtonpost.com/olympics",
+            "title": "Country",
+            "data": [
+                {
+                    "rank": 6,
+                    "icon": "https://wp-stat.s3.amazonaws.com/graphics/sports/olympics/flags/USA.jpg",
+                    "label": "United States",
+                    "bronze": 23,
+                    "silver": 12,
+                    "gold": 33
+                },
+                {
+                    "rank": 6,
+                    "icon": "https://wp-stat.s3.amazonaws.com/graphics/sports/olympics/flags/RUS.jpg",
+                    "label": "Russia",
+                    "bronze": 23,
+                    "silver": 12,
+                    "gold": 33
+                },
+                {
+                    "rank": 6,
+                    "icon": "https://wp-stat.s3.amazonaws.com/graphics/sports/olympics/flags/NOR.jpg",
+                    "label": "Norway",
+                    "bronze": 23,
+                    "silver": 12,
+                    "gold": 33
+                },
+                {
+                    "rank": 6,
+                    "icon": "https://wp-stat.s3.amazonaws.com/graphics/sports/olympics/flags/CAN.jpg",
+                    "label": "Canada",
+                    "bronze": 23,
+                    "silver": 12,
+                    "gold": 33
+                }
+            ]
+        },
+        {
             "type":"sanitized_html",
             "subtype":"paragraph",
             "content":"His Thursday night fashion show served as the finale to four days of runway presentations and tableaux vivants. It was not the most provocative collection. It wasn’t even one of his strongest, as he played on mostly one note: the skinny striped suit of the British rockers who landed in California two generations ago and exerted their influence over the music scene.",
